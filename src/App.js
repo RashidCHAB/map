@@ -4,7 +4,6 @@ import { Link, Route, Routes } from 'react-router-dom';
 import Home from "./pages/Home"
 import Features from "./pages/Features"
 import Contact from "./pages/Contact"
-import Notfound from "./pages/Notfound"
 import { useState } from 'react';
 function App() {
   let bool = false
@@ -51,16 +50,10 @@ function App() {
       </header>
       <footer className='footer'>Сделано с любовью, <div className='footerP'>Россия</div> щедрая душа<div className='footerP'>@Nestlé</div></footer>
 
-
-
-
-
-
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/features' element={<Features />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
-        <Route path='/notfound' element={<Notfound />}></Route>
       </Routes>
     </div>
   );
